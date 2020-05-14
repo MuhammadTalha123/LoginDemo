@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         Log.i("username", usernameEditText.getText().toString());
 
         Log.i("password", passwordEditText.getText().toString());
+
+        Toast.makeText(this, "Welcome!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
